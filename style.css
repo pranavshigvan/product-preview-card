@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(30, 38%, 92%);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    padding: 25px;
+    display: grid;
+    place-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.card {
+    max-width: 400px;
+    min-width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+}
+.card .image_container img {
+    width: 100%;
+}
+.content {
+    padding: 20px;
+}
+.content > span {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 30px;
+}
+.content h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: hsl(212, 21%, 14%);
+}
+.content p {
+    margin-bottom: 40px;
+    color: hsl(228, 12%, 48%);
+}
+.content h3 {
+    font-family: 'Fraunces', serif;
+    font-size: 35px;
+    color: hsl(158, 36%, 37%);
+}
+.content h3 del {
+    font-size: 20px;
+    color: hsl(228, 12%, 48%);
+    margin-left: 25px;
+}
+.content button {
+    padding: .8rem;
+    width: 100%;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-radius: 15px;
+    margin: 15px 0;
+}
+@media (min-width:600px) {
+    .card {
+        min-width: 600px;
+        max-width: 620px;
+        display: flex;
+    }
+    .card > div {
+        width: 50%;
+    }
+}
